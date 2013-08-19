@@ -3,8 +3,6 @@
 # ADD EXECUTABLE PERMISSION
 # chmod +x hangman.rb
 
-# The command below doesn't work
-
 puts "Welcome to Hangman!"
 
 words = [ "apple", "xylophone", "zebra", "foobar", "message" ]
