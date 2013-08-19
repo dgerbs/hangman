@@ -3,7 +3,7 @@
 # ADD EXECUTABLE PERMISSION
 # chmod +x hangman.rb
 
-puts "Welcome to Hangman!"
+puts "\nWELCOME to HANGMAN!\n\n"
 
 words = [ "apple", "xylophone", "zebra", "foobar", "message" ]
 word = words.sample
