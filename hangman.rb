@@ -17,8 +17,7 @@ loop do
 	print "Guess a single letter (a-z) or the entire word: "
 	response = gets.chomp
 
-	if response.length == 1 && word.include?(response)
-		
+	if response.length == 1 && word.include?(response)	
 		# Update word displayed to user
 		puts "\nFound #{word.scan(response).length} occurance(s) of the character #{response}.\n\n"
 		word.length.times do |i|
@@ -29,12 +28,9 @@ loop do
 		chances -= 1
 		puts "\nSorry, no " + response + "'s found.\n\n"
 	end
-	# Word is guessed, end game
+		# Word is guessed, end game
 	if response == word || display == word
-		print "Congratulations, you've guessed the word.\n\n"
-		break
-	else response == !word || display == !word  
-		print "Sorry, the hidden word was #{word}.\n\n"		
+		print "Congratulations, you've guessed the word!\n\n"
 		break
 	end
 		# Player runs out of chances, end game
