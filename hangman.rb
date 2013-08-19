@@ -31,7 +31,10 @@ loop do
 	end
 	# Word is guessed, end game
 	if response == word || display == word
-		print "Congratulations, you've guessed the word"
+		print "Congratulations, you've guessed the word.\n\n"
+		break
+	else response == !word || display == !word  
+		print "Sorry, the hidden word was #{word}.\n\n"		
 		break
 	end
 		# Player runs out of chances, end game
