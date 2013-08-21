@@ -35,6 +35,7 @@ loop do
 			puts "\nSorry, no " + response + "'s found.\n\n"
 		end
 	else
+			# Player guesses correct word, otherwise incorrect word and end game.
 		if response == word
 			puts "Congratulations, you've guessed the word!\n"
 		else
